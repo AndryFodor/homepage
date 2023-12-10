@@ -261,3 +261,7 @@
     color: var(--secondary-text-color);
   }
   
+  .my-projects li a{
+    text-decoration: none;
+    color: var(--secondary-text-color);
+  }
