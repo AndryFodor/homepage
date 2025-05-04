@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Résumé</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="index.js" defer></script>
 </head>
 
 <body>
@@ -105,7 +106,8 @@
                         <div class="skills">
                             <h3 class="skills__header">Skills</h3>
                             <p class="skills__text">
-                                Strong dedication to work, being highly motivated, have an ability to find solutions in challenging working situations and strong teamworking skills
+                                Strong dedication to work, being highly motivated, have an ability to find solutions in
+                                challenging working situations and strong teamworking skills
                             </p>
                         </div>
                     </div>
@@ -117,18 +119,30 @@
                                 <h3 class="experiences__header">Experience</h3>
                                 <div class="experiences__company">
                                     <div class="experiences__company-header">
-                                        <span class="experiences__company-header-durability">2005-Present</span>
-                                        <h3 class="experiences__company-header-name">Binary Studio</h3>
+                                        <span class="experiences__company-header-durability">2023-Present</span>
+                                        <h3 class="experiences__company-header-name">Appexoft</h3>
                                     </div>
 
                                     <div class="experiences__company-project">
                                         <span class="experiences__company-project-role">Full-Stack Developer</span>
-                                        <h3 class="experiences__company-project-name">Hooman project</h3>
+                                        <h3 class="experiences__company-project-name">Gambling Apps</h3>
                                         <ul class="experiences__company-project-responsibilities">
-                                            <li>Backend Architecture</li>
-                                            <li>Frontend Development</li>
-                                            <li>API Integration</li>
-                                            <li>Code Maintenance</li>
+                                            <li>Strapi Improvement, Migrations</li>
+                                            <li>GraphQL Federation Development</li>
+                                            <li>Project Rewriting to TS</li>
+                                            <li>Storybook Filling</li>
+                                            <li>Test coverage level increasing</li>
+                                            <li>Client Support</li>
+                                        </ul>
+                                    </div>
+                                    <div class="experiences__company-project">
+                                        <span class="experiences__company-project-role">Full-Stack Developer</span>
+                                        <h3 class="experiences__company-project-name">Wnstn AI</h3>
+                                        <ul class="experiences__company-project-responsibilities">
+                                            <li>Proxy Implementation</li>
+                                            <li>SSE Connection</li>
+                                            <li>Markdown Parsing</li>
+                                            <li>App Widget Adding</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -139,26 +153,47 @@
                                     <div class="additional-info__education">
                                         <h3 class="additional-info__education-header">Education</h3>
                                         <div class="additional-info__education-university">
-                                            <span class="additional-info__education-university-durability">2021</span>
+                                            <span
+                                                class="additional-info__education-university-durability">2021-2025</span>
+                                            <h3 class="additional-info__education-university-speciality">
+                                                Computer Engineering
+                                            </h3>
+                                            <p class="additional-info__education-university-name">
+                                                Lviv Polytechnic National University
+                                            </p>
+                                        </div>
+                                        <div class="additional-info__education-university">
+                                            <span class="additional-info__education-university-durability">2023</span>
                                             <h3 class="additional-info__education-university-speciality">
                                                 Full-Stack Development
                                             </h3>
                                             <p class="additional-info__education-university-name">
-                                                Binary Studio Academy
+                                                Binary Studio Academy / Winter Academy
                                             </p>
                                         </div>
                                     </div>
 
                                     <div class="additional-info__languages">
                                         <h3 class="additional-info__languages-header">Languages</h3>
-                                        <p class="additional-info__languages-item">English</p>
+                                        <p class="additional-info__languages-item">English/B2</p>
                                         <p class="additional-info__languages-item">
-                                            Ukrainian
+                                            Ukrainian/Native Speaker
                                         </p>
+                                        <p class="additional-info__languages-item">Hungarian/A2</p>
                                     </div>
                                 </div>
-
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="more__info">
+                        <div class="more__info__element">
+                            <button id="getInfoBtn" class="more__info__element__cta">Get more info</button>
+                            <p id="infoContainer" class="more__info__element__random_result more__info__element__placeholder">
+                                Here you will see a random message (1 out of 3). You can regenerate it, but
+                                still, everything will be in the hands of chance
+                            </p>
                         </div>
                     </div>
                 </div>
