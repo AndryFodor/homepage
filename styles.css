@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+p, span, h1, h3{
+    cursor: default;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
@@ -14,6 +18,8 @@ body {
     --icon-color: #6a737d;
     --border-color: #ff9a0045;
     --text-decoration-color: #ff9a00;
+    --button-hover-color: #ff7a00;
+    --button-active-color: #e66a00;
 }
 
 .container {
@@ -42,6 +48,7 @@ body {
     max-width: 900px;
 }
 
+.more__info,
 .resume__block {
     border-bottom: 3px solid var(--border-color);
     padding-bottom: 30px;
@@ -167,6 +174,7 @@ body {
     margin-bottom: 15px;
 }
 
+.more__info__element__random_result,
 .skills__text {
     color: var(--secondary-text-color);
     text-align: justify;
@@ -266,4 +274,38 @@ body {
 
 .additional-info__languages-item {
     color: var(--secondary-text-color);
+}
+
+/* more info section styles */
+
+.more__info__element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+.more__info__element__cta {
+    margin: 4vh auto;
+    background-color: var(--text-decoration-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.more__info__element__cta:hover {
+    background-color: var(--button-hover-color);
+    transform: translateY(-2px);
+}
+
+.more__info__element__cta:active {
+    background-color: var(--button-active-color);
+    transform: translateY(0);
+}
+
+.more__info__element__placeholder {
+    color: var(--durability-text-color);
 }
