@@ -83,6 +83,7 @@ body {
 }
 
 .contact-info__header {
+    font-size: 2rem;
     color: var(--primary-text-color);
     margin-bottom: 15px;
     text-decoration-color: var(--text-decoration-color);
